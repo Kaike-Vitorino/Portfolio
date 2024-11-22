@@ -1,0 +1,11 @@
+:root {
+    /* Colors */
+    --color-text: #f4f0fb; /* Texto em tom claro arroxeado */
+    --color-primary: #6d4aa0; /* Roxo primário mais suave */
+    --color-secundary: #4e3370; /* Roxo escuro para destaque secundário */
+    --color-dark: #2e1b47; /* Tom roxo mais escuro */
+    --color-bg: #1b112e; /* Fundo bem escuro com tom arroxeado */
+
+    /* Fonts */
+    --font-roboto: "Roboto";
+}

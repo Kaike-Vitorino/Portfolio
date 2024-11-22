@@ -1,0 +1,184 @@
+@import '../../Assets/vars.css';
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700;800;9008& display=swap");
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 49px;
+    z-index: 1;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.textAnimate code {
+    display: inline-block;
+    font-family: 'Fira Code', monospace;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typingAnimation 2.5s steps(30, end);
+    font-size: 1.5em;
+    color: #8e44ad; /* Tom roxo claro */
+}
+
+.textAnimate::after {
+    content: '|';
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin-left: 3px;
+    position: relative;
+    margin-bottom: 15px;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: cursorBlink 0.7s infinite alternate;
+}
+@keyframes cursorBlink {
+    from, to {
+        border-right: 2px solid transparent;
+    }
+    50% {
+        border-right: 2px solid #aa7bc3;
+    }
+}
+
+@keyframes typingAnimation {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--color-text);
+    z-index: 1;
+
+    font-size: 1.6rem;
+    margin: 2rem 0 4rem;
+}
+
+.title {
+    margin-bottom: 33px;
+    font-family: var(--font-roboto);
+    background: linear-gradient(
+        90deg,
+        rgba(244, 240, 251, 1) 70%,
+        rgba(244, 240, 251, 0) 120%
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.description {
+    font-size: 26px;
+    font-family: var(--font-roboto);
+    margin-top: 32px;
+    margin-bottom: 52px;
+    margin-right: 160px;
+}
+
+@media screen and (max-width: 832px) {
+    .title {
+        margin-top: 52px;
+        margin-right: 32px;
+        font-size: 30px;
+    }
+    .description {
+        font-size: 32px;
+        margin-left: 25px;
+        margin-right: 0px;
+    }
+    .textAnimate code {
+        font-size: 0.7em;
+    }
+    .textAnimate::after {
+        font-size: 0.7em;
+        margin-bottom: 5px;
+    }
+}
+
+/* BotÃĢo de Contato */
+.contact {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    padding: 17px 26px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 100px;
+    font-size: 30px;
+    font-weight: 600;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s ease;
+}
+
+.contact:hover {
+    background-color: rgba(109, 74, 160, 0.7);
+}
+
+.imageMy {
+    border-radius: 100%;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    z-index: 1;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, 10px);
+    }
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+.topBlur {
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    min-width: 350px;
+    top: -128px;
+    left: -10vw;
+    border-radius: 764px;
+    background: rgba(109, 74, 160, 0.5);
+    filter: blur(100px);
+    z-index: 0;
+}
+
+.bottomBlur {
+    position: absolute;
+    width: 80vw;
+    height: 60vw;
+    min-width: 350px;
+    min-height: 250px;
+    top: 246px;
+    right: 0vw;
+    border-radius: 764px;
+    background: rgba(78, 51, 112, 0.5);
+    filter: blur(100px);
+    z-index: 0;
+}
+
+@media screen and (max-width: 832px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .content {
+        align-items: center;
+    }
+}

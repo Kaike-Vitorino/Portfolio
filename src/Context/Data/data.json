@@ -1,0 +1,151 @@
+[
+    {
+        "": [
+            {
+                "id": 1,
+                "imagem": "https://www.wallpapertip.com/wmimgs/237-2376655_blockchain-wallpaper.jpg",
+                "titulo": "PARA O FUTURO",
+                "assunto": "Exemplo de texto para artigo futuro."
+            }
+        ],
+        "Cursos": [
+            {
+                "id": 1,
+                "curso": "IBM Z Xplore - Concepts",
+                "Instituicao": "IBM",
+                "descricao": "Certificação que cobre conceitos fundamentais de Mainframe, incluindo Z/OS e TSO.",
+                "logo": "https://community.ibm.com/zsystems/uploads/image/content-card/qvgcex7orah.webp",
+                "certificado": "",
+                "conclusão": ""
+            },
+            {
+                "id": 2,
+                "curso": "Python Fundamentos",
+                "Instituicao": "Fundação Bradesco",
+                "descricao": "Curso introdutório sobre lógica de programação e desenvolvimento em Python.",
+                "logo": "https://seeklogo.com/images/B/bradesco-icon-logo-9924102675-seeklogo.com.png",
+                "certificado": "",
+                "conclusão": ""
+            },
+            {
+                "id": 3,
+                "curso": "Python Avançado",
+                "Instituicao": "Fundação Bradesco",
+                "descricao": "Certificação avançada cobrindo estruturas de dados complexas e automação em Python.",
+                "logo": "https://seeklogo.com/images/B/bradesco-icon-logo-9924102675-seeklogo.com.png",
+                "certificado": "",
+                "conclusão": ""
+            },
+            {
+                "id": 4,
+                "curso": "NaturalONE",
+                "Instituicao": "Software AG",
+                "descricao": "Curso introdutório sobre os fundamentos do desenvolvimento e manutenção de aplicações em ambientes mainframe utilizando NaturalONE.",
+                "logo": "https://companieslogo.com/img/orig/SOW.F-10212d55.png?t=1720244494",
+                "certificado": "",
+                "conclusão": ""
+            },
+            {
+                "id": 5,
+                "curso": "Capacitação Mainframe - COBOL, VSAM, DB2 e CICS",
+                "Instituicao": "Escola de Tecnologia",
+                "descricao": "Curso que aborda fundamentos e conceitos avançados de desenvolvimento em Mainframe, com foco em TSO, JCL, COBOL e CICS.",
+                "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjNlL3ecnvCOE7LfsPgwq7KM-zaoQ-uNZpLw&s",
+                "certificado": "",
+                "conclusão": ""
+            }
+        ],
+        "Skills": [
+            {
+                "tittle": "Golang",
+                "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg"
+            },
+            {
+                "tittle": "Rust",
+                "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg"
+            },
+            {
+                "tittle": "Python",
+                "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+            },
+            {
+                "tittle": "COBOL",
+                "imageSrc": "https://i.ibb.co/10QTkB2/images-removebg-preview-1.png"
+            },
+            {
+                "tittle": "JavaScript",
+                "imageSrc": "https://i.postimg.cc/cJGHchV6/javascript.png"
+            },
+            {
+                "tittle": "Natural",
+                "imageSrc": "https://i.ibb.co/TK788XW/images-1-removebg-preview.png"
+            },
+            {
+                "tittle": "VSAM",
+                "imageSrc": "https://cdn.prod.website-files.com/6278a25acc3db4aaa47a3aa5/65d73c638c498a3268f964b4_VSAM%20Test.webp"
+            },
+            {
+                "tittle": "DB2",
+                "imageSrc": "https://horusinfo.com.br/wp-content/uploads/2017/05/IBM-DB2.png"
+            },
+            {
+                "tittle": "CICS",
+                "imageSrc": "https://i.ibb.co/SK46p7v/unnamed-removebg-preview.png"
+            },
+            {
+                "tittle": "SQL",
+                "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+            },
+            {
+                "tittle": "MongoDB",
+                "imageSrc": "https://img.icons8.com/?size=512&id=74402&format=png"
+            }
+        ],
+
+        "Projetos": [
+            {
+                "id": 1,
+                "title": "IteraMindAI",
+                "imageSrc": "https://raw.githubusercontent.com/Kaike-Vitorino/IteraMindAI/refs/heads/main/placeholderCut.png",
+                "description": "Sistema de IA modular e de alto desempenho projetado para simular raciocínio iterativo e gerenciamento inteligente de tarefas.",
+                "skills": ["Python", "Rust", "Go", "LLM"],
+                "demo": "",
+                "source": "https://github.com/Kaike-Vitorino/IteraMindAI"
+            },
+            {
+                "id": 2,
+                "title": "Gerador De Ficha RPG FL",
+                "imageSrc": "https://i.ibb.co/vwMGf1r/FL-Placeholder-Cut.webp",
+                "description": "Um gerador de fichas para RPG de mesa, automatizando a criação de personagens com base em regras predefinidas.",
+                "skills": ["Python", "Flask"],
+                "demo": "",
+                "source": "https://github.com/Kaike-Vitorino/Gerador-De-Ficha-RPG-FL"
+            },
+            {
+                "id": 3,
+                "title": "Spotify Database",
+                "imageSrc": "https://i.ibb.co/5r8vHp8/Spotify-Placeholder-Cut.webp",
+                "description": "Modelagem do banco de dados Spotify seguindo. Modelo Lógico Normalizado e uma documentação completa do banco de dados.",
+                "skills": ["Modelagem de Dados", "Análise de Requisitos"],
+                "demo": "",
+                "source": "https://github.com/Kaike-Vitorino/IteraMindAI"
+            }, {
+                "id": 4,
+                "title": "MultiCore Scheduler SO4",
+                "imageSrc": "https://i.ibb.co/CHjhVKP/SO4-Placeholder-Cut.webp",
+                "description": "Modelagem do banco de dados Spotify seguindo. Modelo Lógico Normalizado e uma documentação completa do banco de dados.",
+                "skills": ["Modelagem de Dados", "Análise de Requisitos"],
+                "demo": "",
+                "source": "https://github.com/Kaike-Vitorino/IteraMindAI"
+            }, {
+                "id": 5,
+                "title": "Auto-ClubPenguin",
+                "imageSrc": "https://i.ibb.co/JQjfPbk/Club-Penguim-Placeholder-Cut.webp",
+                "description": "Script Python desenvolvido para automatizar duas tarefas específicas no jogo Club Penguin: cavar para ganhar moedas (AutoDig) e comprar cartas de elementos (AutoBuyCard).\n\n.",
+                "skills": ["Python", "PyAutoGUI"],
+                "demo": "",
+                "source": "https://github.com/Kaike-Vitorino/IteraMindAI"
+            }
+        ]
+    }
+]
