@@ -128,15 +128,15 @@
                 "description": "Modelagem do banco de dados Spotify seguindo. Modelo Lógico Normalizado e uma documentação completa do banco de dados.",
                 "skills": ["Modelagem de Dados", "Análise de Requisitos"],
                 "demo": "",
-                "source": "https://github.com/Kaike-Vitorino/IteraMindAI"
+                "source": "https://github.com/Kaike-Vitorino/Projeto-Spotify-Database-Modeling"
             }, {
                 "id": 4,
                 "title": "MultiCore Scheduler SO4",
                 "imageSrc": "https://i.ibb.co/CHjhVKP/SO4-Placeholder-Cut.webp",
-                "description": "Modelagem do banco de dados Spotify seguindo. Modelo Lógico Normalizado e uma documentação completa do banco de dados.",
+                "description": "Escalonador para sistemas multicore implementado em Rust. O objetivo do projeto é gerenciar tarefas em um sistema com múltiplos núcleos de processamento, distribuindo a carga de trabalho de forma eficiente entre os núcleos.",
                 "skills": ["Modelagem de Dados", "Análise de Requisitos"],
                 "demo": "",
-                "source": "https://github.com/Kaike-Vitorino/IteraMindAI"
+                "source": "https://github.com/Kaike-Vitorino/MultiCore-Scheduler-SO4"
             }, {
                 "id": 5,
                 "title": "Auto-ClubPenguin",
@@ -144,7 +144,7 @@
                 "description": "Script Python desenvolvido para automatizar duas tarefas específicas no jogo Club Penguin: cavar para ganhar moedas (AutoDig) e comprar cartas de elementos (AutoBuyCard).\n\n.",
                 "skills": ["Python", "PyAutoGUI"],
                 "demo": "",
-                "source": "https://github.com/Kaike-Vitorino/IteraMindAI"
+                "source": "https://github.com/Kaike-Vitorino/AutoDig-AutoBuyCard-ClubPenguin"
             }
         ]
     }
