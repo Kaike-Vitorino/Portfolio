@@ -106,7 +106,7 @@
             {
                 "id": 1,
                 "title": "IteraMindAI",
-                "imageSrc": "https://raw.githubusercontent.com/Kaike-Vitorino/IteraMindAI/refs/heads/main/placeholderCut.png",
+                "imageSrc": "https://raw.githubusercontent.com/Kaike-Vitorino/IteraMindAI/refs/heads/main/assets/placeholderCUT.jpg",
                 "description": "Sistema de IA modular e de alto desempenho projetado para simular raciocínio iterativo e gerenciamento inteligente de tarefas.",
                 "skills": ["Python", "Rust", "Go", "LLM"],
                 "demo": "",
