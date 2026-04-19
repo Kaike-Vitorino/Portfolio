@@ -1,0 +1,83 @@
+.wrapper {
+  padding: 3.5rem 0;
+}
+
+.section {
+  position: relative;
+}
+
+.kicker {
+  color: var(--color-accent-primary);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.3rem;
+  font-size: 0.8rem;
+}
+
+.section h2 {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  font-size: clamp(1.6rem, 3vw, 2.35rem);
+  color: #f3f6ff;
+}
+
+.lead {
+  color: #acb7df;
+  margin: 0 0 1.2rem;
+  max-width: 70ch;
+}
+
+.textGrid {
+  display: grid;
+  gap: 0.75rem;
+  color: #b8c1e5;
+  line-height: 1.65;
+  margin-bottom: 1.9rem;
+}
+
+.focusGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.focusCard {
+  padding: 1.2rem;
+  border: 1px solid rgba(130, 166, 255, 0.16);
+  border-radius: 16px;
+  background: linear-gradient(160deg, rgba(18, 24, 48, 0.58), rgba(15, 18, 34, 0.28));
+  backdrop-filter: blur(12px);
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.focusCard:hover {
+  transform: translateY(-4px);
+  border-color: rgba(77, 142, 254, 0.5);
+}
+
+.focusCard h3 {
+  margin: 0 0 0.55rem;
+  color: #e8eeff;
+  font-size: 1rem;
+}
+
+.focusCard p {
+  margin: 0;
+  color: #afbae0;
+  line-height: 1.55;
+  font-size: 0.95rem;
+}
+
+.meta {
+  margin-top: 0.7rem !important;
+  color: #72b7ff !important;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+}
+
+@media (max-width: 700px) {
+  .wrapper {
+    padding: 2.8rem 0;
+  }
+}

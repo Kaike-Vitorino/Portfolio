@@ -1,0 +1,118 @@
+.wrapper {
+  padding: 3rem 0;
+}
+
+.kicker {
+  color: var(--color-accent-primary);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.2rem;
+  font-size: 0.8rem;
+}
+
+.wrapper h2 {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  color: #f4f8ff;
+  font-size: clamp(1.6rem, 3vw, 2.35rem);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  border: 1px solid rgba(138, 174, 255, 0.26);
+  padding: 1.1rem;
+  background: linear-gradient(140deg, rgba(15, 21, 44, 0.85), rgba(8, 11, 26, 0.6));
+  box-shadow: var(--shadow-card);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.cardHeader h3 {
+  margin: 0;
+  color: #edf3ff;
+  font-size: 1.04rem;
+}
+
+.cardHeader a {
+  color: #84c8ff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-family: var(--font-mono);
+}
+
+.summary {
+  color: #b7c4eb;
+  line-height: 1.55;
+  margin-top: 0.8rem;
+}
+
+.stack {
+  margin-top: 0.7rem;
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+
+.stack span {
+  font-size: 0.75rem;
+  color: #a8b8eb;
+  border: 1px solid rgba(132, 167, 247, 0.35);
+  border-radius: 999px;
+  padding: 0.26rem 0.68rem;
+  background: rgba(25, 42, 84, 0.46);
+  font-family: var(--font-mono);
+}
+
+.card ul {
+  margin: 0.85rem 0 0;
+  padding-left: 1.2rem;
+  color: #b5c0e5;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.card li {
+  line-height: 1.45;
+}
+
+.mlxPilot::before,
+.iteramind::before,
+.rpg::before,
+.scheduler::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.35;
+  mix-blend-mode: screen;
+}
+
+.mlxPilot::before {
+  background: radial-gradient(circle at 85% 12%, rgba(66, 203, 255, 0.35), transparent 55%);
+}
+
+.iteramind::before {
+  background: radial-gradient(circle at 15% 18%, rgba(124, 89, 255, 0.38), transparent 58%);
+}
+
+.rpg::before {
+  background: radial-gradient(circle at 70% 10%, rgba(96, 214, 156, 0.35), transparent 56%);
+}
+
+.scheduler::before {
+  background: radial-gradient(circle at 82% 17%, rgba(255, 150, 112, 0.28), transparent 56%);
+}

@@ -1,0 +1,60 @@
+.wrapper {
+  padding: 3rem 0;
+}
+
+.kicker {
+  color: var(--color-accent-primary);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.2rem;
+  font-size: 0.8rem;
+}
+
+.wrapper h2 {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  color: #f4f8ff;
+  font-size: clamp(1.6rem, 3vw, 2.35rem);
+}
+
+.layout {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.box {
+  padding: 1.15rem;
+  border: 1px solid rgba(132, 163, 255, 0.22);
+  border-radius: 16px;
+  background: linear-gradient(150deg, rgba(16, 24, 48, 0.72), rgba(11, 15, 30, 0.46));
+}
+
+.box h3 {
+  margin-top: 0;
+  color: #e6eeff;
+  margin-bottom: 0.9rem;
+}
+
+.box h4 {
+  margin: 0;
+  color: #d6e2ff;
+}
+
+.box p {
+  margin: 0.45rem 0;
+  color: #b2bedc;
+}
+
+.box ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: 0.6rem;
+  color: #bbc7ea;
+}
+
+.box li {
+  line-height: 1.45;
+}

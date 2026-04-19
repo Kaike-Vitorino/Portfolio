@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+  --color-bg: #050914;
+  --color-bg-soft: #0d152d;
+  --color-bg-card: #0f1730;
+  --text-main: #eaf0ff;
+  --text-soft: #adb6d8;
+  --color-accent-primary: #6ab6ff;
+  --color-accent-secondary: #35d3ff;
+  --shadow-glow: 0 0 24px rgba(78, 165, 255, 0.24);
+  --shadow-card: 0 10px 35px rgba(0, 0, 0, 0.3);
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+  --font-heading: 'Space Grotesk', 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Consolas', monospace;
+  --transition-fast: 220ms ease;
+  --transition-medium: 320ms ease;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--text-main);
+  background: radial-gradient(circle at 15% 10%, #1c2648 0%, var(--color-bg) 42%, #040812 100%);
+  line-height: 1.45;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: #f4f7ff;
+  line-height: 1.2;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  color: inherit;
+  font-family: inherit;
+}
+
+.container {
+  width: min(1120px, calc(100% - 3rem));
+  margin-inline: auto;
+}
+
+.site-shell {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.skip-link {
+  position: absolute;
+  top: -9999px;
+  left: 0.5rem;
+  background: #1e2f5f;
+  color: #fff;
+  padding: 0.6rem 0.9rem;
+  border-radius: 8px;
+}
+
+.skip-link:focus {
+  top: 0.8rem;
+  z-index: 999;
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: min(1120px, calc(100% - 1.5rem));
+  }
+}

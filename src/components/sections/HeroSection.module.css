@@ -1,0 +1,217 @@
+.heroSection {
+  padding-top: clamp(3rem, 6vw, 5rem);
+  padding-bottom: clamp(3rem, 7vw, 5rem);
+  overflow: hidden;
+  position: relative;
+}
+
+.heroSection::before {
+  content: '';
+  position: absolute;
+  width: min(620px, 74vw);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  right: -10%;
+  top: 7%;
+  background: radial-gradient(circle at 35% 30%, rgba(77, 142, 254, 0.35), rgba(77, 142, 254, 0));
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+.heroShell {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: clamp(1.4rem, 3vw, 2.5rem);
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 690px;
+}
+
+.kicker {
+  font-family: var(--font-mono);
+  color: var(--color-accent-primary);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.heroText h1 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(2.15rem, 5vw, 3.6rem);
+  line-height: 1.1;
+  color: #f2f5ff;
+  letter-spacing: 0.01em;
+}
+
+.role {
+  margin: 0;
+  color: #cbd2f2;
+  font-size: 1.2rem;
+}
+
+.summary,
+.intro {
+  margin: 0;
+  color: var(--text-soft);
+  line-height: 1.65;
+  font-size: 1.05rem;
+}
+
+.intro {
+  max-width: 62ch;
+}
+
+.location {
+  margin: 0.2rem 0 1rem;
+  color: #9aa7d5;
+  font-family: var(--font-mono);
+}
+
+.ctaRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.ctaRow a {
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 0.68rem 1.1rem;
+  font-weight: 600;
+  font-size: 0.94rem;
+  border: 1px solid transparent;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), border var(--transition-fast),
+    background var(--transition-fast), color var(--transition-fast);
+}
+
+.primaryButton {
+  background: linear-gradient(135deg, #4d8efe, #3dd7ff);
+  color: #021024 !important;
+}
+
+.primaryButton:hover,
+.primaryButton:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-glow);
+}
+
+.ghostButton {
+  background: rgba(16, 22, 45, 0.7);
+  color: #e4ebff;
+  border-color: rgba(120, 153, 255, 0.25);
+}
+
+.ghostButton:hover,
+.ghostButton:focus-visible {
+  transform: translateY(-1px);
+  border-color: var(--color-accent-primary);
+}
+
+.heroVisual {
+  justify-self: center;
+  width: min(460px, 100%);
+  aspect-ratio: 1 / 1;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.heroVisual img {
+  width: min(340px, 100%);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 40px;
+  border: 1px solid rgba(128, 167, 255, 0.28);
+  box-shadow: 0 22px 40px rgba(0, 0, 0, 0.42);
+  position: relative;
+  z-index: 2;
+  transform: translateZ(0);
+}
+
+.heroVisual::after {
+  content: '';
+  position: absolute;
+  width: min(320px, 95%);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  border: 1px solid rgba(122, 175, 255, 0.25);
+  animation: pulse 10s ease-in-out infinite;
+}
+
+.glow1,
+.glow2,
+.grid {
+  position: absolute;
+  inset: 8%;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.glow1 {
+  background: radial-gradient(circle at 30% 30%, rgba(77, 142, 254, 0.45), rgba(77, 142, 254, 0));
+  filter: blur(18px);
+  z-index: 0;
+}
+
+.glow2 {
+  width: 80%;
+  margin: auto;
+  inset: 10% 10%;
+  background: radial-gradient(circle at 70% 70%, rgba(64, 225, 244, 0.32), rgba(64, 225, 244, 0));
+  filter: blur(22px);
+  z-index: 1;
+  animation: drift 10s ease-in-out infinite alternate;
+}
+
+.grid {
+  border: 1px dashed rgba(130, 176, 255, 0.12);
+  inset: 12%;
+  border-radius: 30px;
+  transform: rotate(8deg);
+  z-index: 1;
+  opacity: 0.7;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1.05);
+    opacity: 0.58;
+  }
+}
+
+@keyframes drift {
+  0% {
+    transform: translateX(-4px) translateY(3px);
+  }
+  50% {
+    transform: translateX(4px) translateY(-3px);
+  }
+  100% {
+    transform: translateX(-4px) translateY(3px);
+  }
+}
+
+@media (max-width: 920px) {
+  .heroShell {
+    grid-template-columns: 1fr;
+  }
+
+  .heroVisual {
+    order: -1;
+    width: 100%;
+  }
+
+  .heroVisual img {
+    width: min(260px, 75vw);
+  }
+}
