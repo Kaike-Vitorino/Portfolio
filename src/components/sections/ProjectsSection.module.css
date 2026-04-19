@@ -38,7 +38,8 @@
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  align-items: baseline;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .cardHeader h3 {
@@ -48,9 +49,20 @@
 }
 
 .cardHeader a {
+  white-space: nowrap;
   color: #84c8ff;
   text-decoration: none;
   font-size: 0.85rem;
+  font-family: var(--font-mono);
+}
+
+.status {
+  color: #6cc3ff;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid rgba(110, 189, 255, 0.45);
+  background: rgba(7, 22, 48, 0.42);
   font-family: var(--font-mono);
 }
 
@@ -90,7 +102,7 @@
 }
 
 .mlxPilot::before,
-.iteramind::before,
+.iteraMind::before,
 .rpg::before,
 .scheduler::before {
   content: '';
@@ -105,7 +117,7 @@
   background: radial-gradient(circle at 85% 12%, rgba(66, 203, 255, 0.35), transparent 55%);
 }
 
-.iteramind::before {
+.iteraMind::before {
   background: radial-gradient(circle at 15% 18%, rgba(124, 89, 255, 0.38), transparent 58%);
 }
 

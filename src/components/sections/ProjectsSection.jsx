@@ -16,6 +16,7 @@ function ProjectsSection() {
               <article key={project.title} className={`${styles.card} ${styles[project.cover]}`}>
                 <div className={styles.cardHeader}>
                   <h3>{project.title}</h3>
+                  <span className={styles.status}>{project.status}</span>
                   <a href={project.link} target="_blank" rel="noopener noreferrer" aria-label={`Ver projeto ${project.title}`}>
                     GitHub
                   </a>

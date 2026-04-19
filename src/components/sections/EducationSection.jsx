@@ -8,8 +8,8 @@ function EducationSection() {
     <section id="certificacoes" className={styles.wrapper}>
       <RevealSection delay={170}>
         <div className="container">
-          <p className={styles.kicker}>Formacao e certificacoes</p>
-          <h2>Base tecnica e educacao profissional</h2>
+          <p className={styles.kicker}>Formação e certificações</p>
+          <h2>Base técnica e formação profissional</h2>
 
           <div className={styles.layout}>
             <section className={styles.box}>

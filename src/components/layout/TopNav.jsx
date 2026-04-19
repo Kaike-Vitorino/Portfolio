@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 
 import { navigationLinks, profile } from '../../data/portfolioData';
 import styles from './TopNav.module.css';
@@ -12,6 +12,17 @@ function TopNav() {
     setMenuOpen(false);
   };
 
+  useEffect(() => {
+    const onEsc = (event) => {
+      if (event.key === 'Escape') {
+        setMenuOpen(false);
+      }
+    };
+
+    window.addEventListener('keydown', onEsc);
+    return () => window.removeEventListener('keydown', onEsc);
+  }, []);
+
   return (
     <header className={styles.header}>
       <div className={`${styles.navShell} container`}>
@@ -23,6 +34,7 @@ function TopNav() {
         <button
           className={styles.menuButton}
           type="button"
+          aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'}
           aria-expanded={menuOpen}
           aria-controls="main-navigation"
           onClick={() => setMenuOpen(!menuOpen)}

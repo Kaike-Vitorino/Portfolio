@@ -14,6 +14,7 @@ function ContactSection() {
             Procurando um perfil senior em backend, sistemas e IA aplicada para times de produto e
             infraestrutura.
           </p>
+          <p className={styles.note}>Aberto para oportunidades remotas e presenciais no Brasil.</p>
 
           <div className={styles.grid}>
             <a href={`mailto:${profile.contact.email}`} className={styles.card}>

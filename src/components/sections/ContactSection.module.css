@@ -25,6 +25,13 @@
   line-height: 1.55;
 }
 
+.note {
+  margin: 0.45rem 0 0;
+  color: #93a8d7;
+  font-family: var(--font-mono);
+  font-size: 0.86rem;
+}
+
 .grid {
   margin-top: 1.2rem;
   display: grid;
