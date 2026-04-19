@@ -23,7 +23,7 @@ export const profile = {
   },
   contact: {
     email: 'kaikevoliveira@gmail.com',
-    phone: '(+55) 61 99383-018',
+    phone: '(+55) 61 9 9938-3018',
     whatsapp: 'https://wa.me/5561999383018',
     linkedin: 'https://www.linkedin.com/in/kaike-vitorino-de-oliveira',
     github: 'https://github.com/Kaike-Vitorino',
